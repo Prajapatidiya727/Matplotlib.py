@@ -1,14 +1,4 @@
-#import matplotlib.pyplot as plt
-#%matplotlib inline
 
-
-#apl_price=[45,23,78,99,64,55,77,99]
-#ms_pric=[78,96,43,52,79,63,74,85,85]
-#year=[2015,2016,2017,2018,2019,2020,2021,2022,2023,2024]
-
-
-#plt.plot(year , apl_price)
-#plt.show()
 
 
 import matplotlib.pyplot as plt
@@ -68,15 +58,6 @@ axes_2[1].set_xlabel('x')
 axes_2[1].set_ylabel('x Squared')
 axes_2[1].plot(x_1,y_1)
 
-
-#fig_3 = plt.figure(figsize=(6,4))
-#axes_3=fig_3.add_axes([0,0,1,1])
-#axes_3.plot(x_1,y_1,color='navy',alpha=75,lw=2,ls='_',marker='o',markerize=7,markerfacecolor='y',markeredgecolor='y',markeredgewidth=4)
-
-#save visualization to a file
-#fig_3.savefile
-
-#WORKING  WITH PANDAS DATAFRAM
 
 
 from matplotlib import pyplot
@@ -207,12 +188,7 @@ plt.plot(x,y,'o--',color='red',lw=0.7,ms=5,label='component 1')
 plt.legend(loc='upper right',fontsize=15)#legend is to show name of ploted thing and loc means location which shows that where will the legend be placed.Fontsize means size og legend.
 plt.grid(True,color='k')
 
-#x2=np.linespace(0,15,100)
-#y2.sin(x2)
 
-#plt.figure(figsize=(8,3))
-#plt.plot(x,y,'o--',color='red',lw=0.7,ms=5,label='component 1')
-#plt.plot(x2,y2,'--',color='green',lw=0.7,ms=5,label='component 2')
 
 from matplotlib import pyplot as plt
 import numpy as np
@@ -252,16 +228,6 @@ plt.show()
 
 
 
-#fig.ax=plt.subplots(3,2,figsize=(12,12))
-#ax= axes[0][0]
-#ax.plot(x,y,'o--')
-#ax.set_xlabel('asd')
-#ax.set_ylabel('asd mahina')
-#ax= axes[1][1]
-#ax.hist(res,bins=30,density=True,histtype='step')
-#ax.set_xlabl('asd')
-#ax.set_ylabel('asd mahina')
-#plt.show()
 
 res_a1=0.2*np.random.randn(1000)+0.4
 res_b1=0.25*np.random.randn(1000)+0.4
@@ -272,12 +238,6 @@ plt.hist(res_a1,bins=100)
 plt.hist(res_b1,bins=100)
 plt.show()
 
-#fig,axes=plt.subplots(1,2,figsize=(10,3.5))
-#ax=axes[0]# This 0 will show plot in firt axes maeans 0 axes.
-#ax.hist(res_a1,bins=30,density=True,histtype='step',label='a')
-#ax.hist(res_b1,bins=30,density=True,histtype='step',label='b')
-#ax.legend(loc='upper right')
-#plt.show()
 
 
 # 2D Plot
@@ -320,19 +280,6 @@ seedpoints=np.array([[0,1],[1,0]])
 ax.streamplot(x,y,U,V,start_points=seedpoints)
 
 
-#image reading
-# in image reading you just need to write im=plt.imread(and then csv file name) and then plt.imshow(im)
-
-
-#Animations
-def f(x,t):
-  return np.sin(x-3*t)
-
-x=np.linspace(0,10*np.pi,1000)
-
-
-plt.plot(x,f(x,0))
-plt.plot(x,f(x,0.1))
 
 
 
